@@ -1,0 +1,39 @@
+:root {
+  /* light theme */
+  --base: #EDE9F7;
+  --primary: #8FA9F3;
+  --card:  #ffffff;
+  --sec1: #93E0D9;
+  --sec2: #F0B5CF;
+  --highlight: #FFF4B3;
+  --light-txt: #ffffff;
+  --dark-txt: #3C3C3C;
+  --headings-txt: just-another-hand-regular;
+  --paragraph-txt: delius-regular:
+}
+
+[data-theme="dark"] {
+    --base: #1B1F3B;
+  --primary: #A8B6FF;
+  --card:  #2A2F52;
+  --sec1: #52E0D5;
+  --sec2: #F07AC3;
+  --highlight: #FFF48C;
+  --light-txt: #F2F3F8;
+  --dark-txt: #B0B4C5;
+  --headings-txt: just-another-hand-regular;
+  --paragraph-txt: delius-regular:
+}
+
+/* 
+Thoughts for the style:
+Cards for mosaic, acrylic and watercolor
+on hover: glowing outline. Don't pop out, just outline.
+*/
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--base);
+}
