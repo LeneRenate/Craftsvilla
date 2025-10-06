@@ -4,13 +4,13 @@
   /* --primary: #8fa9f3; */
   --primary: #7575f0;
   --card: #ffffff;
-  --sec1: #93e0d9;
-  --sec2: #f0b5cf;
+  --sec1: #75d7be;
+  --sec2: #e995bf;
   --highlight: #fff4b3;
   --light-txt: #ffffff;
   --dark-txt: #3c3c3c;
-  --headings-txt: Just Another Hand, cursive;
-  --paragraph-txt: Delius, cursive;
+  --headings-txt: Just Another Hand, arial, sans-serif;
+  --paragraph-txt: Delius, sans-serif;
 }
 
 [data-theme="dark"] {
@@ -45,7 +45,7 @@ body {
 
 header {
   background-color: var(--primary);
-  height: 200px;
+  height: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,14 +55,13 @@ header {
 #logo {
   display: flex;
   flex-flow: row nowrap;
-  width: 35svw;
-  justify-content: space-around;
+  width: 31svw;
+  justify-content: space-between;
   align-items: center;
 }
 
 #logo img {
-  height: 3.75rem;
-  max-height: 100px;
+  height: 3.5rem;
   width: auto;
 }
 
@@ -70,8 +69,7 @@ h1 {
   color: var(--highlight);
   font-family: var(--headings-txt);
   font-size: 3.75rem;
-  letter-spacing: 1rem;
-  text-shadow: 1px 1px 1px var(--light-txt);
+  letter-spacing: 0.375rem;
 }
 
 nav {
@@ -87,7 +85,7 @@ ul {
 
 li {
   font-family: var(--headings-txt);
-  font-size: 2.25rem;
+  font-size: 2rem;
   display: flex;
   flex-flow: row nowrap;
 }
@@ -98,6 +96,8 @@ a {
   border-radius: 15px;
   background-color: var(--sec1);
   padding: 7px 10px 2px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 a:hover,
@@ -106,7 +106,8 @@ a:active {
 }
 
 .icon {
-  padding-right: 3px;
+  height: 1.8rem;
+  padding-right: 0.45rem;
 }
 
 p {
