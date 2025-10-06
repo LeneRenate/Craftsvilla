@@ -1,28 +1,26 @@
 :root {
   /* light theme */
-  --base: #EDE9F7;
-  --primary: #8FA9F3;
-  --card:  #ffffff;
-  --sec1: #93E0D9;
-  --sec2: #F0B5CF;
-  --highlight: #FFF4B3;
+  --base: #ede9f7;
+  --primary: #8fa9f3;
+  --card: #ffffff;
+  --sec1: #93e0d9;
+  --sec2: #f0b5cf;
+  --highlight: #fff4b3;
   --light-txt: #ffffff;
-  --dark-txt: #3C3C3C;
-  --headings-txt: just-another-hand-regular;
-  --paragraph-txt: delius-regular:
+  --dark-txt: #3c3c3c;
+  --headings-txt: Just Another Hand, cursive;
+  --paragraph-txt: Delius, cursive;
 }
 
 [data-theme="dark"] {
-    --base: #1B1F3B;
-  --primary: #A8B6FF;
-  --card:  #2A2F52;
-  --sec1: #52E0D5;
-  --sec2: #F07AC3;
-  --highlight: #FFF48C;
-  --light-txt: #F2F3F8;
-  --dark-txt: #B0B4C5;
-  --headings-txt: just-another-hand-regular;
-  --paragraph-txt: delius-regular:
+  --base: #1b1f3b;
+  --primary: #a8b6ff;
+  --card: #2a2f52;
+  --sec1: #52e0d5;
+  --sec2: #f07ac3;
+  --highlight: #fff48c;
+  --light-txt: #f2f3f8;
+  --dark-txt: #b0b4c5;
 }
 
 /* 
@@ -31,9 +29,86 @@ Cards for mosaic, acrylic and watercolor
 on hover: glowing outline. Don't pop out, just outline.
 */
 
-
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
   background-color: var(--base);
+  width: 100svw;
+  font-family: var(--paragraph-txt);
+  color: var(--dark-txt);
+}
+
+header {
+  background-color: var(--primary);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#logo {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 35svw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo img {
+  height: 3.75rem;
+  max-height: 100px;
+  width: auto;
+}
+
+h1 {
+  color: var(--highlight);
+  font-family: var(--headings-txt);
+  font-size: 3.75rem;
+  letter-spacing: 1rem;
+  text-shadow: 2px 2px 2px var(--light-txt);
+}
+
+nav {
+  width: 65svw;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+li {
+  font-family: var(--headings-txt);
+  font-size: 2.25rem;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+a {
+  color: var(--light-txt);
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: var(--sec1);
+  padding: 7px 10px 2px;
+}
+
+a:hover,
+a:active {
+  background-color: var(--sec2);
+}
+
+.icon {
+  padding-right: 3px;
+}
+
+p {
+  font-size: 1rem;
+  width: 70svw;
 }
