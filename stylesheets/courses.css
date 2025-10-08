@@ -1,3 +1,18 @@
+:root {
+  /* light theme */
+  --base: #ede9f7;
+  /* --primary: #8fa9f3; */
+  --primary: #7575f0;
+  --card: #ffffff;
+  --sec1: #75d7be;
+  --sec2: #e995bf;
+  --highlight: #fff4b3;
+  --light-txt: #ffffff;
+  --dark-txt: #3c3c3c;
+  --headings-txt: Just Another Hand, arial, sans-serif;
+  --paragraph-txt: Delius, sans-serif;
+}
+
 #coursesBtn {
   background-color: var(--sec2);
 }
@@ -11,10 +26,68 @@ section #courseCatalog
     h2  img p img.materials
 */
 
-section {
-  width: 95svw;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#courseIntro {
+  width: 70svw;
+  margin: 10svh auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5svw;
 }
 
 #coursesIntroImg {
   height: 330px;
+}
+
+#courseIntro p {
+}
+
+#courseIntro p::first-letter {
+  font-size: 2rem;
+}
+
+#addedCourses {
+  font-family: var(--headings-txt);
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+#coursesInfo {
+  width: 95svw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+article {
+  width: 28svw;
+  margin-top: 10svh;
+  display: flex;
+  flex-direction: column;
+  gap: 5svh;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-family: var(--headings-txt);
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+article p::first-letter {
+  font-size: 1.5rem;
+}
+
+.materials {
+  width: 25svw;
 }

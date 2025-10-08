@@ -71,7 +71,7 @@ h1 {
 }
 
 nav {
-  width: 65svw;
+  width: 70svw;
 }
 
 ul {
@@ -106,4 +106,19 @@ a:active {
 .icon {
   height: 1.8rem;
   padding-right: 0.45rem;
+}
+
+@media screen and (max-width: 1140px) {
+  nav {
+    width: 85svw;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 590px) {
 }
