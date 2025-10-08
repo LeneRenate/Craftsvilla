@@ -1,5 +1,5 @@
 #homeBtn {
-  box-shadow: 0 0 20px #b0e8da;
+  box-shadow: 0 0 20px var(--highlight);
 }
 
 main {
@@ -19,7 +19,11 @@ main {
 }
 
 .homeSections img {
-  height: 500px;
+  height: 400px;
+  width: auto;
+  background-color: var(--accent1);
+  padding: 10px;
+  box-shadow: 0 0 50px var(--accent1);
 }
 
 #homeIntro {

@@ -1,20 +1,5 @@
-:root {
-  /* light theme */
-  --base: #ede9f7;
-  /* --primary: #8fa9f3; */
-  --primary: #7575f0;
-  --card: #ffffff;
-  --sec1: #75d7be;
-  --sec2: #e995bf;
-  --highlight: #fff4b3;
-  --light-txt: #ffffff;
-  --dark-txt: rgb(60, 60, 60);
-  --headings-txt: Just Another Hand, arial, sans-serif;
-  --paragraph-txt: Delius, sans-serif;
-}
-
 #coursesBtn {
-  box-shadow: 0 0 20px #b0e8da;
+  box-shadow: 0 0 20px var(--highlight);
 }
 
 /* 

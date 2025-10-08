@@ -1,3 +1,14 @@
 #galleryBtn {
-  box-shadow: 0 0 20px #b0e8da;
+  box-shadow: 0 0 20px var(--highlight);
+}
+
+h2 {
+  font-family: var(--headings-txt);
+  font-size: 3rem;
+  text-align: center;
+  margin: 35px auto;
+}
+
+#galleryWall {
+  display: grid;
 }
