@@ -1,0 +1,20 @@
+#coursesBtn {
+  background-color: var(--sec2);
+}
+
+/* 
+section #introSection 
+  p
+  img
+section #courseCatalog
+  article * 3
+    h2  img p img.materials
+*/
+
+section {
+  width: 95svw;
+}
+
+#coursesIntroImg {
+  height: 330px;
+}

@@ -1,0 +1,49 @@
+#homeBtn {
+  background-color: var(--sec2);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.homeSections {
+  width: 90svw;
+  margin-top: 5.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 2rem;
+}
+
+.homeSections img {
+  height: 500px;
+}
+
+#homeIntro {
+  font-family: var(--headings-txt);
+  line-height: 3.125rem;
+  margin-top: 2.5rem;
+}
+
+#homeImg1 {
+  rotate: -6deg;
+}
+
+#homeImg2 {
+  rotate: 12deg;
+}
+
+#homeImg3 {
+  rotate: -2deg;
+}
+
+#homeIntro1 {
+  font-size: 3rem;
+}
+
+#homeIntro2 {
+  font-size: 2rem;
+}

@@ -1,3 +1,7 @@
+/* 
+This will have the style for header og footer, and goes for the whole webpage.
+*/
+
 :root {
   /* light theme */
   --base: #ede9f7;
@@ -23,12 +27,6 @@
   --light-txt: #f2f3f8;
   --dark-txt: #b0b4c5;
 }
-
-/* 
-Thoughts for the style:
-Cards for mosaic, acrylic and watercolor
-on hover: glowing outline. Don't pop out, just outline.
-*/
 
 * {
   margin: 0;
@@ -108,9 +106,4 @@ a:active {
 .icon {
   height: 1.8rem;
   padding-right: 0.45rem;
-}
-
-p {
-  font-size: 1rem;
-  width: 70svw;
 }
