@@ -8,13 +8,13 @@
   --sec2: #e995bf;
   --highlight: #fff4b3;
   --light-txt: #ffffff;
-  --dark-txt: #3c3c3c;
+  --dark-txt: rgb(60, 60, 60);
   --headings-txt: Just Another Hand, arial, sans-serif;
   --paragraph-txt: Delius, sans-serif;
 }
 
 #coursesBtn {
-  background-color: var(--sec2);
+  box-shadow: 0 0 20px #b0e8da;
 }
 
 /* 
@@ -46,17 +46,16 @@ main {
   height: 330px;
 }
 
-#courseIntro p {
-}
-
 #courseIntro p::first-letter {
   font-size: 2rem;
 }
 
 #addedCourses {
   font-family: var(--headings-txt);
+  color: rgba(60, 60, 60, 0.6);
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
+  font-weight: 100;
 }
 
 #coursesInfo {
@@ -66,18 +65,27 @@ main {
   justify-content: space-evenly;
 }
 
+h2 {
+  margin-top: 7svh;
+  font-family: var(--headings-txt);
+  font-size: 2.5rem;
+  letter-spacing: 0.25rem;
+}
+
 article {
   width: 28svw;
-  margin-top: 10svh;
+  margin-top: 4svh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 5svh;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 2rem;
-  border-radius: 10px;
+  border: 10px solid var(--primary);
+  border-radius: 20px;
 }
 
-h2 {
+h3 {
   text-align: center;
   font-family: var(--headings-txt);
   font-size: 2rem;
