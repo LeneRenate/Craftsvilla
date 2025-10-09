@@ -4,6 +4,7 @@
 
 h2 {
   font-family: var(--headings-txt);
+  color: var(--secondary);
   font-size: 3rem;
   text-align: center;
   margin: 30px auto 20px;

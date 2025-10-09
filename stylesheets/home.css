@@ -6,7 +6,27 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: space-around;
+  padding-top: 5svh;
+}
+
+#homeIntro {
+  font-family: var(--headings-txt);
+  width: 35svw;
+  line-height: 3.125rem;
+  margin-top: 5rem;
+}
+
+#homeIntro1 {
+  font-size: 3rem;
+}
+
+#homeIntro2 {
+  font-size: 2rem;
+}
+
+.homeText {
+  width: 30svw;
+  padding-top: 100px;
 }
 
 .imageContainer {
@@ -28,6 +48,9 @@ To get a soft edge, I'm placing a layer on top of the background for the gradien
   right: 0;
   bottom: 0;
   padding: 20px;
+  /* 
+  Doing a left-right and a top-bottom double gradient between the base-background and imageContainer-background  
+  */
   background: linear-gradient(
       to right,
       var(--base),
@@ -54,17 +77,10 @@ To get a soft edge, I'm placing a layer on top of the background for the gradien
 
 .homeSections {
   width: 90svw;
-  margin-top: 5.3rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 0 2rem;
-}
-
-#homeIntro {
-  font-family: var(--headings-txt);
-  line-height: 3.125rem;
-  margin-top: 2.5rem;
 }
 
 /* 
@@ -80,12 +96,4 @@ To give the image and container the same tilt
 
 .imageContainer:has(#homeImg3) {
   rotate: -2deg;
-}
-
-#homeIntro1 {
-  font-size: 3rem;
-}
-
-#homeIntro2 {
-  font-size: 2rem;
 }
