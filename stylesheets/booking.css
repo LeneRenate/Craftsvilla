@@ -1,3 +1,8 @@
 #bookingBtn {
   box-shadow: 0 0 20px var(--highlight);
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+}

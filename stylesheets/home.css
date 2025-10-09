@@ -31,18 +31,17 @@ To get a soft edge, I'm placing a layer on top of the background for the gradien
   background: linear-gradient(
       to right,
       var(--base),
-      transparent 20px,
-      transparent calc(100% - 20px),
+      transparent 15px,
+      transparent calc(100% - 15px),
       var(--base)
     ),
     linear-gradient(
       to bottom,
       var(--base),
-      transparent 20px,
-      transparent calc(100% - 20px),
+      transparent 15px,
+      transparent calc(100% - 15px),
       var(--base)
     );
-  pointer-events: none;
 }
 
 .homeSections img {
@@ -68,6 +67,9 @@ To get a soft edge, I'm placing a layer on top of the background for the gradien
   margin-top: 2.5rem;
 }
 
+/* 
+To give the image and container the same tilt
+*/
 .imageContainer:has(#homeImg1) {
   rotate: -6deg;
 }

@@ -63,6 +63,7 @@ article {
   margin-top: 4svh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   gap: 5svh;
   background-color: rgba(166, 181, 225, 0.3);
