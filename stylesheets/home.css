@@ -17,6 +17,9 @@ main {
   border-radius: 10px;
 }
 
+/* 
+To get a soft edge, I'm placing a layer on top of the background for the gradient
+*/
 .imageContainer::before {
   content: "";
   position: absolute;
