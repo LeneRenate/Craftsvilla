@@ -100,6 +100,15 @@ footer {
   height: 60px;
   background-color: var(--primary);
   margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 2.5svw;
+}
+
+#copyright {
+  font-family: var(--headings-txt);
+  font-size: 1.5rem;
 }
 
 /* @media screen and (max-width: 1140px) {

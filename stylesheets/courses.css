@@ -21,7 +21,7 @@ main {
   width: 70svw;
   margin: 10svh auto;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
   gap: 5svw;
@@ -43,13 +43,6 @@ main {
   font-weight: 100;
 }
 
-#coursesInfo {
-  width: 95svw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
 h2 {
   margin-top: 7svh;
   font-family: var(--headings-txt);
@@ -57,16 +50,24 @@ h2 {
   letter-spacing: 0.25rem;
 }
 
+#infoSection {
+  width: 95svw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 article {
   width: 28svw;
+  min-width: 270px;
   margin-top: 4svh;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5svh;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(166, 181, 225, 0.3);
   padding: 2rem;
-  border: 10px solid var(--primary);
+  border: 10px solid var(--accent1);
   border-radius: 20px;
 }
 
@@ -77,10 +78,31 @@ h3 {
   letter-spacing: 0.2rem;
 }
 
-article p::first-letter {
+.part1 p::first-letter {
   font-size: 1.5rem;
 }
 
 .materials {
+  margin: 15px auto;
   width: 25svw;
+}
+
+@media screen and (max-width: 890px) {
+  #infoSection {
+    flex-flow: column;
+  }
+  article {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .part1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .part2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
